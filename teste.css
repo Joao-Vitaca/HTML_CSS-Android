@@ -32,17 +32,20 @@ body{
 header{
     background-image: linear-gradient(to bottom, rgb(131, 248, 131), rgb(61, 231, 61), green);
 }
-.intro-header{
+header h1{
     text-align: center;
+    margin: 0%;
+    padding: 1%;
 }
-header h1{ 
+header p{
+    text-align: center;
+    margin: 0%;
+}
     /*@import url();
     @font-face {
     font-family: ;
     src: url();
     }   */
-    margin-top: 0%;
-}
 header ul{
     padding-left: 0%;
     margin-bottom: 0%;
