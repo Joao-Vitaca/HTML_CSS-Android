@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+*{
+    margin: 0;
+    padding: 0;
+}
 :root{
     --cor0: rgb(47, 218, 166);
 }
@@ -12,26 +16,8 @@ body{
     padding: 0%;
     font-family: Arial, Helvetica, sans-serif;
 }
-.container-conteudo{
-    background-color: aliceblue;
-    padding-bottom: 3%;
-    max-width: 800px;
-    margin: auto;
-}
-.container-conteudo h1{
-    padding-top: 1%;
-    margin-top: 0%;
-}
-.container-conteudo p{
-    text-align: justify;
-    text-indent: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    line-height: 150%;
-}
 header{
     background-image: linear-gradient(to bottom, rgb(131, 248, 131), rgb(61, 231, 61), green);
-    padding-bottom: 1%;
 }
 header h1{
     text-align: center;
@@ -47,31 +33,54 @@ header p{
     font-family: ;
     src: url();
     }   */
-header ul{
-    padding-left: 0%;
-    margin-bottom: 0%;
-    display: flex;
+header nav{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(0, 0, 0, 0.466);
+    border-radius: 15px;
     list-style: none;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
-    column-gap: 3%;
 }
-header ul li a{
+header a{
     text-decoration: none;
     color: aliceblue;
     border: 3px solid black;
+    border-radius: 5px;
     padding: 5px;
 }
-header ul li a:hover{
-    background-color: aqua;
-    color: darkorange;
+header a:hover{
+    background-color: rgb(46, 255, 64);
+    color: rgb(0, 0, 0);
     border-color: aliceblue;
     cursor: copy;
-    padding: 8px;
     border-radius: 5%;
     transition-duration: 0.3s;
     font-size: 130%;
 }
-.titulo-corpo{
+.container-conteudo{
+    background-color: aliceblue;
+    padding-bottom: 3%;
+    max-width: 800px;
+    margin: auto;
+}
+.container-conteudo h2{
+    text-align: center;
+    margin: 3%;
+}
+.container-conteudo p{
+    text-align: justify;
+    text-indent: 5%;
+    padding: 0% 3%;
+    margin: 3%;
+    line-height: 150%;
+}
+.titulo-corpo{    
+    padding-top: 5%;
     text-align: center;
 }
 #primeiro_paragrafo_conteudo{
@@ -95,18 +104,26 @@ iframe{
     width: 90%;
     height: 90%;
 }
+footer h1{
+    background-image: linear-gradient(to right, rgb(0, 61, 0), rgb(0, 170, 0));
+    padding: 15px;
+    border-radius: 15px 15px 0% 0%;
+    margin: 5% 5% 0% 5%;
+}
 .container-footer{
-    margin: 5%;
+    margin: 0% 5%;
     background-color: aquamarine;
     padding: 10px;
-    border-radius: 5%;
+    border-radius: 0% 0% 15px 15px;
     box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.233);
 }
+
 .list-footer{
     list-style: none;
     list-style-position: inside;
     list-style-type: '\2713\00A0\00A0';
     columns: 2;
+    margin-left: 8%;
 }
 a.externo::after{
     content: '\1F517';
