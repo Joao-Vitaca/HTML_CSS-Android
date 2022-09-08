@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+body{
+    margin: 0px;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container-conteudo{
+    padding-bottom: 3%;
+    max-width: 800px;
+    margin: auto;
+}
+.container-conteudo h2{
+    text-align: center;
+    margin: 3%;
+}
+.container-conteudo p{
+    text-align: justify;
+    text-indent: 5%;
+    padding: 0% 3%;
+    margin: 3%;
+    line-height: 150%;
+}
+.titulo-corpo{    
+    padding-top: 5%;
+    text-align: center;
+}
+#primeiro_paragrafo_conteudo{
+    font-weight: bold;
+}
+#imagem_homem_android{
+    width: 50%;
+    margin: auto;
+    min-width: 200px;
+}
+.container-video{
+    padding-bottom: 56.25%;
+    border-radius: 15px;
+}
+iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+footer h1{
+    padding: 15px;
+    border-radius: 15px 15px 0% 0%;
+    margin: 5% 5% 0% 5%;
+}
+.container-footer{
+    margin: 0% 5%;
+    padding: 10px;
+    border-radius: 0% 0% 15px 15px;
+    box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.233);
+}
+.list-footer{
+    list-style: none;
+    list-style-position: inside;
+    list-style-type: '\2713\00A0\00A0';
+    columns: 2;
+    margin-left: 8%;
+}
+a.externo::after{
+    content: '\1F517';
+}
